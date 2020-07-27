@@ -1,0 +1,13 @@
+{
+  "name": "cloud-storage-download-url",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Vansh Gupta",
+  "dependencies": {
+    "@google-cloud/storage": "^5.1.2"
+  }
+}
