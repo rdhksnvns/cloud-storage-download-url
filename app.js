@@ -18,7 +18,7 @@ async function url() {
   // Get the download url of the file
   downloadUrl = await storage.bucket(bucketName).file(srcFilename).getSignedUrl({
     action: 'read',
-    expires: '03-09-2491'
+    expires: '03-09-2490'
   });
 
   console.log(`Download url: ` + downloadUrl);
