@@ -1,10 +1,10 @@
-const projectId = 'ecell-5b937'
+const projectId = '<project-id>'
 
 // Key file
 const keyFilename = 'key.json'
 
-const bucketName = 'ecell-5b937.appspot.com';
-const srcFilename = 'certificate_template.jpg';
+const bucketName = '<project-id>.appspot.com';
+const srcFilename = 'image.jpg';
 var downloadUrl;
 
 // Imports the Google Cloud client library
@@ -18,7 +18,7 @@ async function url() {
   // Get the download url of the file
   downloadUrl = await storage.bucket(bucketName).file(srcFilename).getSignedUrl({
     action: 'read',
-    expires: '03-09-2490'
+    expires: '03-09-2490' // Url expiry time
   });
 
   console.log(`Download url: ` + downloadUrl);
