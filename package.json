@@ -8,6 +8,6 @@
   },
   "author": "Vansh Gupta",
   "dependencies": {
-    "@google-cloud/storage": "^5.1.2"
+    "@google-cloud/storage": "^5.8.0"
   }
 }
